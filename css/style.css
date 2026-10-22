@@ -355,16 +355,17 @@ sup { position: relative; top: -0.25em; font-size: 0.68em; }
 
 .news-featured {
   padding: clamp(1.25rem, 3vw, 1.75rem);
-  border: 1px solid var(--line-light);
+  border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface);
-  box-shadow: var(--shadow-sm);
-  transition: box-shadow 300ms ease, transform 300ms ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.03);
+  transition: box-shadow 300ms ease, transform 300ms ease, border-color 300ms ease;
 }
 
 .news-featured:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.05);
+  border-color: rgba(51,86,109,0.12);
+  transform: translateY(-3px);
 }
 
 .news-stamp {
