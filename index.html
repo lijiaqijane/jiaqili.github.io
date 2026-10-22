@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fanxu Meng (孟繁续) — Foundation Model Research</title>
-  <meta name="description" content="Fanxu Meng is a researcher at Dots Studio, Xiaohongshu Inc., working on foundation model architectures.">
-  <meta name="author" content="Fanxu Meng">
-  <meta name="theme-color" content="#f7f4ed">
-  <link rel="canonical" href="https://fxmeng.github.io/">
+  <title>Jiaqi Li (李佳琪) — Agent & Long-Context Research</title>
+  <meta name="description" content="Jiaqi Li is a researcher at Beijing Institute for General Artificial Intelligence (BIGAI), working on agents, long-context language models, and evaluation & benchmarking.">
+  <meta name="author" content="Jiaqi Li">
+  <meta name="theme-color" content="#f5e8d8">
+  <link rel="canonical" href="https://jiaqili.github.io/">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="stylesheet" href="/css/style.css">
 
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="Fanxu Meng (孟繁续) — Foundation Model Research">
-  <meta property="og:description" content="Research on foundation model architectures at Dots Studio, Xiaohongshu Inc.">
-  <meta property="og:url" content="https://fxmeng.github.io/">
-  <meta property="og:image" content="https://fxmeng.github.io/images/bg.webp">
+  <meta property="og:title" content="Jiaqi Li (李佳琪) — Agent & Long-Context Research">
+  <meta property="og:description" content="Research on agents, long-context language models, and evaluation & benchmarking at BIGAI.">
+  <meta property="og:url" content="https://jiaqili.github.io/">
+  <meta property="og:image" content="https://jiaqili.github.io/images/bg.webp">
   <meta property="og:image:width" content="1024">
   <meta property="og:image:height" content="683">
   <meta property="og:image:alt" content="A quiet mountain landscape">
@@ -26,34 +26,36 @@
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Fanxu Meng",
-    "alternateName": "孟繁续",
-    "url": "https://fxmeng.github.io/",
-    "image": "https://fxmeng.github.io/images/photo.webp",
-    "worksFor": {"@type": "Organization", "name": "Dots Studio, Xiaohongshu Inc."},
-    "alumniOf": {"@type": "CollegeOrUniversity", "name": "Peking University"},
-    "knowsAbout": ["Foundation model architectures", "Large language models", "Parameter-efficient fine-tuning", "Efficient inference"],
+    "name": "Jiaqi Li",
+    "alternateName": "李佳琪",
+    "url": "https://jiaqili.github.io/",
+    "image": "https://jiaqili.github.io/images/photo.webp",
+    "worksFor": {"@type": "Organization", "name": "Beijing Institute for General Artificial Intelligence (BIGAI)"},
+    "knowsAbout": ["Agents", "Long-context language models", "Evaluation and benchmarking"],
     "sameAs": [
-      "https://scholar.google.com/citations?user=xvfuhRUAAAAJ",
-      "https://github.com/fxmeng",
-      "https://www.zhihu.com/people/meng-fan-xu-4"
+      "https://scholar.google.com/citations?user=C4Z2-rsAAAAJ",
+      "https://github.com/jiaqili"
     ]
   }
   </script>
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a class="skip-link" href="#main-content" data-cn="跳转到主内容">Skip to main content</a>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="wordmark" href="/" aria-label="Fanxu Meng, home">
-        <span class="wordmark-mark" aria-hidden="true">FM</span><span>Fanxu Meng</span>
+      <a class="wordmark" href="/" aria-label="Jiaqi Li, home">
+        <span class="wordmark-mark" aria-hidden="true">JL</span><span data-cn="李佳琪">Jiaqi Li</span>
       </a>
       <nav aria-label="Primary navigation">
         <ul class="nav-list">
-          <li><a href="#about">About</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" data-cn="关于">About</a></li>
+          <li><a href="#news" data-cn="新闻">News</a></li>
+          <li><a href="#publications" data-cn="精选">Selected</a></li>
+          <li><a href="/publications.html" data-cn="全部论文">Publications</a></li>
+          <li><a href="#experience" data-cn="履历">Experience</a></li>
+          <li><a href="#contact" data-cn="联系">Contact</a></li>
+          <li><button class="lang-btn" id="langToggle" aria-label="Switch language">中文</button></li>
         </ul>
       </nav>
     </div>
@@ -63,37 +65,89 @@
     <section class="hero" id="about" aria-labelledby="about-title">
       <div class="container hero-grid">
         <div class="portrait-wrap">
-          <img class="portrait" src="/images/photo.webp" width="240" height="240" alt="Portrait of Fanxu Meng" fetchpriority="high">
+          <div class="portrait-inner">
+            <img class="portrait" src="/images/ab.webp" width="240" height="240" alt="Portrait of Jiaqi Li" fetchpriority="high">
+          </div>
         </div>
         <div class="hero-copy">
-          <p class="eyebrow">REDstar@Dots Studio · Xiaohongshu Inc.</p>
-          <h1 id="about-title">Fanxu Meng <span lang="zh-CN">孟繁续</span></h1>
-          <p class="lead">I work on efficient architectures for long-context large language models and parameter-efficient fine-tuning.</p>
-          <p>
-            I am currently with Dots Studio at Xiaohongshu Inc. My research focuses on improving the efficiency and
-            scalability of long-context LLMs through architectural innovations, as well as developing effective
-            parameter-efficient fine-tuning methods. I have served as a reviewer for NeurIPS, ICML, ICLR, CVPR,
-            TPAMI, etc.
+          <p class="eyebrow" data-cn="研究员 · 北京通用人工智能研究院（BIGAI）">Researcher @ Beijing Institute for General AI (BIGAI)</p>
+          <h1 id="about-title" data-cn="李佳琪">Jiaqi Li <span lang="zh-CN">李佳琪</span></h1>
+          <p class="lead" data-cn="研究兴趣：智能体、长上下文语言模型、评测与基准测试。">I work on agents, long-context language models, and evaluation &amp; benchmarking.</p>
+          <p data-cn="我是北京通用人工智能研究院（BIGAI）的研究员，研究重点包括构建能力强大的 AI 智能体、理解其长上下文处理能力，以及为大语言模型开发系统的评测框架。">
+            I am a researcher at the Beijing Institute for General Artificial Intelligence (BIGAI). 
+            My research focuses on building capable AI agents and understanding their long-context capabilities, 
+            as well as developing principled evaluation frameworks for large language models.
           </p>
-          <p>
-            I received my Ph.D. from the Institute for Artificial Intelligence at Peking University, advised by
-            <a href="https://muhanzhang.github.io/">Prof. Muhan Zhang</a>, and my master’s degree from Harbin Institute
-            of Technology, Shenzhen, advised by
-            <a href="https://scholar.google.com/citations?user=fhwB7UwAAAAJ">Prof. Guangming Lu</a>.
-          </p>
-          <p>
-            During my master’s and Ph.D. studies, I spent a total of four years at Tencent YouTu as both an intern and
-            a full-time researcher, collaborating with <a href="https://www.sunxing.org/">Xing Sun</a>,
-            <a href="https://haochenglouis.github.io/">Hao Cheng</a>, and <a href="https://keli.info/">Ke Li</a>.
+          <p data-cn="担任 NeurIPS、ICML、ICLR、ACL、EMNLP、CVPR、AAAI 等会议审稿人。">
+            I have served as a reviewer for NeurIPS, ICML, ICLR, ACL, EMNLP, CVPR, AAAI, etc.
           </p>
           <ul class="research-topics" aria-label="Research topics">
-            <li>Efficient architectures for long-context LLMs</li><li>Parameter-efficient fine-tuning</li>
+            <li data-cn="智能体">Agent</li><li data-cn="长上下文">Long Context</li><li data-cn="评测与基准">Evaluation &amp; Benchmarking</li>
           </ul>
           <div class="hero-actions" aria-label="Profile links">
-            <a class="button button-primary" href="https://scholar.google.com/citations?user=xvfuhRUAAAAJ">Google Scholar</a>
-            <a class="button" href="https://github.com/fxmeng">GitHub</a>
-            <a class="button" href="mailto:filtergrafting@gmail.com">Email</a>
+            <a class="button button-primary" href="https://scholar.google.com/citations?user=C4Z2-rsAAAAJ">Google Scholar</a>
+            <a class="button" href="https://github.com/jiaqili">GitHub</a>
+            <a class="button" href="mailto:lijiaqi@bigai.ai">Email</a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news-section" id="news" aria-labelledby="news-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><h2 id="news-title" data-cn="新闻">News</h2></div>
+        </div>
+
+        <div class="news-headlines">
+          <article class="news-featured">
+            <p class="news-stamp">★ 2026 · 03</p>
+            <h3 data-cn="TongAgents 登顶多项国际智能体榜单">TongAgents tops international agent benchmarks</h3>
+            <p data-cn="通研院自研 TongAgents 系统在 AssistantBench、Tau2-bench 等多项国际智能体榜单取得全球第一。">BIGAI's TongAgents system achieves #1 on AssistantBench, Tau2-bench, and top rankings on Terminal-Bench 2.0 and Mind2Web2.</p>
+            <div class="news-links"><a href="https://www.bigai.ai/blog/news/%e4%ba%a7%e5%93%81%e8%83%bd%e5%8a%9b%e9%a2%86%e8%b7%91%e5%85%a8%e7%90%83%ef%bc%81%e9%80%9a%e7%a0%94%e9%99%a2-tongagents-%e7%99%bb%e4%b8%8a%e5%a4%9a%e9%a1%b9%e5%9b%bd%e9%99%85%e6%99%ba%e8%83%bd/">Website</a></div>
+          </article>
+          <article class="news-featured">
+            <p class="news-stamp">★ 2026 · 03</p>
+            <h3 data-cn="通鉴 TongLaw — 业内首个可解释可信法律智能体">TongLaw — The first explainable &amp; trustworthy legal agent</h3>
+            <p data-cn="通研院发布面向法律实务场景的可解释、可信赖的法律智能体系统。">BIGAI releases an explainable and trustworthy legal AI agent for professional legal practice.</p>
+            <div class="news-links"></div>
+          </article>
+          <article class="news-featured">
+            <p class="news-stamp">★ 2026 · 03</p>
+            <h3 data-cn="红杉中国 × Xbench × Humanlaya — 百万美金经济价值智能体评测集">Sequoia &times; Xbench &times; Humanlaya — Million-dollar agent benchmark</h3>
+            <p data-cn="1美元Token撬动4800美元收益，AI挑战百万级基准，最赚钱Agent出现。">$1 token generates $4,800 revenue — the most profitable AI agent benchmark with real economic value.</p>
+            <div class="news-links"><a href="https://www.bing.com/search?q=1%e7%be%8e%e5%85%83Token%e6%92%ac%e5%8a%9b4800%e7%be%8e%e5%85%83%e6%94%b6%e7%9b%8a%21AI%e6%8c%91%e6%88%98%e7%99%be%e4%b8%87%e7%ba%a7%e5%9f%ba%e5%87%86%2c%e6%9c%80%e8%b5%9a%e9%92%b1Agent%e5%87%ba%e7%8e%b0%e6%9c%ba%e5%99%a8%e4%b9%8b%e5%bf%83">Website</a></div>
+          </article>
+          <article class="news-featured">
+            <p class="news-stamp">★ 2026</p>
+            <h3 data-cn="Belief Context Graph (BCG) — 面向长程智能体的信念感知上下文网络">Belief Context Graph (BCG) — Belief-aware context graphs for long-horizon agents</h3>
+            <p data-cn="基于置信度感知的上下文图，驱动长程智能体更确定的推理，开源发布。">A confidence-aware belief context graph that drives more deterministic reasoning in long-horizon agents, now open-source.</p>
+            <div class="news-links"><a href="https://github.com/bigai-nlco/belief-context-graph">GitHub</a></div>
+          </article>
+          <article class="news-featured">
+            <p class="news-stamp">★ 2026</p>
+            <h3 data-cn="RSIHub — 原则性智能体自我进化框架">RSIHub — Principled agent self-improvement framework</h3>
+            <p data-cn="在冻结评估器和声明变异边界下进行原则性智能体自我改进，记录可验证谱系。">An open-source framework for principled agent self-improvement under frozen evaluators with verifiable lineage.</p>
+            <div class="news-links"><a href="https://github.com/simple-agent-lab/RSIHub">GitHub</a></div>
+          </article>
+          <article class="news-featured">
+            <p class="news-stamp">★ 2026</p>
+            <h3 data-cn="TongTest — 通用人工智能评测系统">TongTest — AGI evaluation system</h3>
+            <p data-cn="通研院构建的以人类儿童发展阶段为基准的 AGI 评估标准，涵盖视觉、语言、认知、运动、学习、价值六大维度。">An AGI evaluation standard benchmarked against human child development stages, covering vision, language, cognition, motion, learning, and value.</p>
+            <div class="news-links"><a href="https://tong-test.vercel.app/">Website</a></div>
+          </article>
+          <article class="news-featured">
+            <p class="news-stamp">★ 2026</p>
+            <h3 data-cn="麻省理工科技评论专题报道">MIT Technology Review feature</h3>
+            <p data-cn="MIT Technology Review 报道通研院通用人工智能研究进展。">MIT Technology Review covers BIGAI's advances in Artificial General Intelligence research.</p>
+            <div class="news-links"><a href="https://www.mittrchina.com/news/detail/14948">Website</a></div>
+          </article>
+          <article class="news-featured">
+            <p class="news-stamp">★ 2026</p>
+            <h3 data-cn="三篇新预印本">Three new preprints</h3>
+            <p data-cn=""><a href="https://arxiv.org/abs/2605.27028">Less Is More</a>, <a href="https://arxiv.org/abs/2605.29507">Xetrieval</a>, and <a href="https://arxiv.org/abs/2605.30888">The Flip Side of RLHF</a>.</p>
+            <div class="news-links"><a href="https://arxiv.org/abs/2605.27028">Website</a></div>
+          </article>
         </div>
       </div>
     </section>
@@ -101,135 +155,179 @@
     <section class="publications-section" id="publications" aria-labelledby="publications-title">
       <div class="container">
         <div class="section-heading">
-          <div><p class="eyebrow">Research</p><h2 id="publications-title">Selected publications</h2></div>
-          <a class="text-link" href="https://scholar.google.com/citations?user=xvfuhRUAAAAJ">View all on Google Scholar <span aria-hidden="true">→</span></a>
+          <div><h2 id="publications-title" data-cn="精选论文">Selected Publications</h2></div>
+          <a class="text-link" href="/publications.html" data-cn="查看全部论文 →">View all publications <span aria-hidden="true">→</span></a>
         </div>
 
         <div class="publication-list">
+
           <article class="publication">
-            <div class="publication-media"><img src="/images/dosa.webp" width="635" height="325" alt="DoSA execution overview: certified screening, candidate compaction, survivor scoring, and sparse writeback" loading="lazy" decoding="async"></div>
+            <div class="publication-media"><img src="/images/loogle.webp" width="635" height="325" alt="" loading="lazy" decoding="async"></div>
+            <div class="publication-body">
+              <p class="venue">ACL 2024</p>
+              <h3>LooGLE: Can Long-Context Language Models Understand Long Contexts?</h3>
+              
+              <p class="authors"><strong>Jiaqi Li</strong>, Mengmeng Wang, Zilong Zheng, Muhan Zhang</p>
+              <ul class="publication-links" aria-label="LooGLE resources"><li><a href="https://arxiv.org/abs/2311.04939">Paper</a></li><li><a href="https://github.com/MuLabPKU/LooGLE">Code</a></li></ul>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="publication-media"><img src="/images/onemillionbench.webp" width="480" height="600" alt="" loading="lazy" decoding="async"></div>
+            <div class="publication-body">
+              <p class="venue">NeurIPS 2026 Evaluation and Benchmarks Track</p>
+              <h3>OneMillion-Bench: How Far Are Language Agents from Human Experts?</h3>
+              
+              <p class="authors">Yang Liu, <strong>Jiaqi Li</strong>, Jun Bai, Qianyu Yang, Xiaobo Hu, Tao Peng, Zaiyuan Wang, Ran Tian, Jiayun Dong, Chun Zhang, Zixia Jia, Kaiyuan Chen, Yixin Ren, Yang Liu, Yanglihong Xiao, Lingyue Yin, Tiliang Duan, Ge Zhang, Gang Yao, Hao Chen, Yuan Gong, Jianpeng Jiao, Zilong Zheng</p>
+              <ul class="publication-links" aria-label="OneMillion-Bench resources"><li><a href="https://arxiv.org/abs/2603.07980">Paper</a></li></ul>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="publication-media"><img src="/images/loogle2.webp" width="480" height="270" alt="" loading="lazy" decoding="async"></div>
+            <div class="publication-body">
+              <p class="venue">NeurIPS 2025 Datasets and Benchmarks Track</p>
+              <h3>LooGLE v2: Are LLMs Ready for Real World Long Dependency Challenges?</h3>
+              
+              <p class="authors">Ziyuan He, Yuxuan Wang, <strong>Jiaqi Li</strong>, Kexin Liang, Muhan Zhang</p>
+              <ul class="publication-links" aria-label="LooGLE v2 resources"><li><a href="https://arxiv.org/abs/2510.22548">Paper</a></li></ul>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="publication-media"><img src="/images/lift.webp" width="882" height="523" alt="" loading="lazy" decoding="async"></div>
+            <div class="publication-body">
+              <p class="venue">ICML 2026</p>
+              <h3>LIFT: Improving Long Context Understanding of Large Language Models Through Long Input Fine-Tuning</h3>
+              
+              <p class="authors">Yansheng Mao, Yufei Xu, <strong>Jiaqi Li</strong>, Fanxu Meng, Haotong Yang, Zilong Zheng, Xiyuan Wang, Muhan Zhang</p>
+              <ul class="publication-links" aria-label="LIFT resources"><li><a href="https://arxiv.org/abs/2502.14644">Paper</a></li></ul>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="publication-media"><img src="/images/rulereasoner.webp" width="480" height="480" alt="" loading="lazy" decoding="async"></div>
+            <div class="publication-body">
+              <p class="venue">ICLR 2026</p>
+              <h3>RuleReasoner: Reinforced Rule-Based Reasoning via Domain-Aware Dynamic Sampling</h3>
+              
+              <p class="authors">Yang Liu, <strong>Jiaqi Li</strong>, Zilong Zheng</p>
+              <ul class="publication-links" aria-label="RuleReasoner resources"><li><a href="https://arxiv.org/abs/2602.00421">Paper</a></li></ul>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="publication-media"><img src="/images/memorysurvey.webp" width="480" height="350" alt="" loading="lazy" decoding="async"></div>
             <div class="publication-body">
               <p class="venue">arXiv 2026</p>
-              <h3>DoSA: Dots Sparse Attention</h3>
-              <p class="summary">A lossless sparse-attention indexer that uses certified bounds to skip unnecessary scoring while preserving exact Top-K token selection.</p>
-              <p class="authors"><strong>Fanxu Meng<sup>*</sup></strong>, Taosong Fang<sup>*</sup></p>
-              <ul class="publication-links" aria-label="DoSA resources"><li><a href="https://arxiv.org/abs/2610.13990">Paper</a></li><li><a href="https://github.com/llm-sys/flash-indexer">Project</a></li><li><a href="https://huggingface.co/papers/2610.13990">Hugging Face</a></li></ul>
+              <h3>The AI Hippocampus: How Far Are We from Human Memory?</h3>
+              
+              <p class="authors">Zixia Jia, <strong>Jiaqi Li</strong>, Yipeng Kang, Yuxuan Wang, Tong Wu, Quansen Wang, Xiaobo Wang, Shuyi Zhang, Junzhe Shen, Qing Li, Siyuan Qi, Yitao Liang, Di He, Zilong Zheng, Song-Chun Zhu</p>
+              <ul class="publication-links" aria-label="AI Hippocampus resources"><li><a href="https://arxiv.org/abs/2601.09113">Paper</a></li></ul>
             </div>
           </article>
 
           <article class="publication">
-            <div class="publication-media"><img src="/images/hisa.webp" width="882" height="523" alt="HISA hierarchical block-to-token indexing workflow" loading="lazy" decoding="async"></div>
+            <div class="publication-media"><img src="/images/reflectevo.webp" width="480" height="270" alt="" loading="lazy" decoding="async"></div>
             <div class="publication-body">
-              <p class="venue">COLM 2026</p>
-              <h3>HISA: Efficient Hierarchical Indexing for Fine-Grained Sparse Attention</h3>
-              <p class="summary">A training-free, coarse-to-fine indexer that accelerates token-level sparse attention while preserving fine-grained selection.</p>
-              <p class="authors">Yufei Xu<sup>*</sup>, <strong>Fanxu Meng<sup>*</sup></strong>, Fan Jiang, Yuxuan Wang, Ruijie Zhou, Zhaohui Wang, Jiexi Wu, Zhixin Pan, Xiaojuan Tang, Wenjie Pei, Tongxuan Liu, Di Yin, Xing Sun, Muhan Zhang</p>
-              <ul class="publication-links" aria-label="HISA resources"><li><a href="https://openreview.net/pdf?id=GnWqiwzNzK">Paper</a></li><li><a href="https://github.com/MuLabPKU/TransArch/tree/main/HISA_COLM_2026">Code</a></li></ul>
+              <p class="venue">ACL Findings 2025</p>
+              <h3>ReflectEvo: Improving Meta Introspection of Small LLMs by Learning Self-Reflection</h3>
+              
+              <p class="authors"><strong>Jiaqi Li</strong>, Xinyi Dong, Yang Liu, Zhizhuo Yang, Quansen Wang, Xiaobo Wang, Song-Chun Zhu, Zixia Jia, Zilong Zheng</p>
+              <ul class="publication-links" aria-label="ReflectEvo resources"><li><a href="https://arxiv.org/abs/2505.16475">Paper</a></li></ul>
             </div>
           </article>
 
-          <article class="publication">
-            <div class="publication-media"><img src="/images/tpla.webp" width="480" height="350" alt="Diagram illustrating Tensor Parallel Latent Attention" loading="lazy" decoding="async"></div>
-            <div class="publication-body">
-              <p class="venue">ASPLOS 2026 · Summer cycle</p>
-              <h3>TPLA: Tensor Parallel Latent Attention</h3>
-              <p class="summary">An attention mechanism designed for tensor parallelism and prefill–decode disaggregation.</p>
-              <p class="authors">Xiaojuan Tang<sup>*</sup>, <strong>Fanxu Meng<sup>*</sup></strong>, Pingzhi Tang, Yuxuan Wang, Di Yin, Xing Sun, Muhan Zhang</p>
-              <ul class="publication-links" aria-label="TPLA resources"><li><a href="https://arxiv.org/abs/2508.15881">Paper</a></li></ul>
-            </div>
-          </article>
-
-          <article class="publication">
-            <div class="publication-media"><img src="/images/transmla.webp" width="480" height="388" alt="TransMLA architecture illustration" loading="lazy" decoding="async"></div>
-            <div class="publication-body">
-              <p class="venue">NeurIPS 2025 · Spotlight · Top 3.19%</p>
-              <h3>TransMLA: Multi-Head Latent Attention Is All You Need</h3>
-              <p class="summary">A theoretical and practical study of MLA, including conversions of Llama and Qwen models to the DeepSeek-style architecture.</p>
-              <p class="authors"><strong>Fanxu Meng<sup>*</sup></strong>, Pingzhi Tang<sup>*</sup>, Xiaojuan Tang, Zengwei Yao, Xing Sun, Muhan Zhang</p>
-              <ul class="publication-links" aria-label="TransMLA resources">
-                <li><a href="https://arxiv.org/abs/2502.07864">Paper</a></li><li><a href="https://github.com/MuLabPKU/TransArch/tree/main/TransMLA_NeurIPS_2025">Code</a></li>
-                <li><a href="https://x.com/_akhaliq/status/1889870173055885452">Discussion</a></li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="publication">
-            <div class="publication-media"><img src="/images/hd_pissa.webp" width="480" height="464" alt="HD-PiSSA method illustration" loading="lazy" decoding="async"></div>
-            <div class="publication-body">
-              <p class="venue">EMNLP 2025 · Oral · Top 3.98%</p>
-              <h3>HD-PiSSA: High-Rank Distributed Orthogonal Adaptation</h3>
-              <p class="summary">High-rank parameter updates for data-parallel fine-tuning.</p>
-              <p class="authors">Yiding Wang<sup>*</sup>, <strong>Fanxu Meng<sup>*</sup></strong>, Xuefeng Zhang, Fan Jiang, Pingzhi Tang, Muhan Zhang</p>
-              <ul class="publication-links" aria-label="HD-PiSSA resources"><li><a href="https://arxiv.org/abs/2505.18777">Paper</a></li><li><a href="https://github.com/MuLabPKU/HD-PiSSA">Code</a></li></ul>
-            </div>
-          </article>
-
-          <article class="publication">
-            <div class="publication-media"><img src="/images/clover.webp" width="480" height="600" alt="CLOVER method illustration" loading="lazy" decoding="async"></div>
-            <div class="publication-body">
-              <p class="venue">ICML 2025</p>
-              <h3>CLOVER: Cross-Layer Orthogonal Vectors Pruning and Fine-Tuning</h3>
-              <p class="summary">An absorb–decompose approach to model pruning and fine-tuning.</p>
-              <p class="authors"><strong>Fanxu Meng</strong>, Pingzhi Tang, Fan Jiang, Muhan Zhang</p>
-              <ul class="publication-links" aria-label="CLOVER resources"><li><a href="https://arxiv.org/abs/2411.17426">Paper</a></li><li><a href="https://github.com/MuLabPKU/TransArch/tree/main/CLOVER_ICML_2025">Code</a></li></ul>
-            </div>
-          </article>
-
-          <article class="publication">
-            <div class="publication-media"><img src="/images/pissa.webp" width="480" height="480" alt="PiSSA method illustration" loading="lazy" decoding="async"></div>
-            <div class="publication-body">
-              <p class="venue">NeurIPS 2024 · Spotlight · Top 2.08%</p>
-              <h3>PiSSA: Principal Singular Values and Singular Vectors Adaptation</h3>
-              <p class="summary">A faster and more effective initialization method for low-rank adaptation.</p>
-              <p class="authors"><strong>Fanxu Meng</strong>, Zhaohui Wang, Muhan Zhang</p>
-              <ul class="publication-links" aria-label="PiSSA resources">
-                <li><a href="https://arxiv.org/abs/2404.02948">Paper</a></li><li><a href="https://github.com/MuLabPKU/PiSSA">Code</a></li>
-                <li><a href="https://github.com/huggingface/peft/tree/main/examples/pissa_finetuning">PEFT example</a></li>
-                <li><a href="https://llamafactory.readthedocs.io/en/latest/advanced/tuning_algorithms.html#pissa">LLaMA-Factory guide</a></li>
-                <li><a href="https://wiki.rwkv.com/RWKV-Fine-Tuning/Pissa-Fine-Tuning.html#pissa-fine-tuning-tutorial">RWKV guide</a></li>
-                <li><a href="https://paddlenlp.readthedocs.io/en/latest/llm/docs/algorithm_overview.html#pissa">PaddleNLP guide</a></li>
-                <li><a href="https://www.bilibili.com/video/BV1wi421e78B/">Talk</a></li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="publication">
-            <div class="publication-media"><img src="/images/swp.webp" width="480" height="270" alt="Stripe-wise pruning illustration" loading="lazy" decoding="async"></div>
-            <div class="publication-body">
-              <p class="venue">NeurIPS 2020</p>
-              <h3>Pruning Filter in Filter</h3>
-              <p class="summary">A stripe-wise structured pruning method for convolutional neural networks.</p>
-              <p class="authors"><strong>Fanxu Meng<sup>*</sup></strong>, Hao Cheng<sup>*</sup>, Ke Li, Huixiang Luo, Xiaowei Guo, Guangming Lu, Xing Sun</p>
-              <ul class="publication-links" aria-label="Pruning Filter in Filter resources"><li><a href="https://arxiv.org/abs/2009.14410">Paper</a></li><li><a href="https://github.com/fxmeng/Pruning-Filter-in-Filter">Code</a></li><li><a href="https://course.zhidx.com/c/NWM2OTYxYTgxN2Q2NzVmNjQ1NjM=">Talk</a></li></ul>
-            </div>
-          </article>
-
-          <article class="publication">
-            <div class="publication-media"><img src="/images/grafting.webp" width="480" height="270" alt="Filter grafting training illustration" loading="lazy" decoding="async"></div>
-            <div class="publication-body">
-              <p class="venue">CVPR 2020</p>
-              <h3>Filter Grafting for Deep Neural Networks</h3>
-              <p class="summary">A training strategy that reactivates invalid filters to improve representation capacity.</p>
-              <p class="authors"><strong>Fanxu Meng<sup>*</sup></strong>, Hao Cheng<sup>*</sup>, Ke Li, Zhixin Xu, Rongrong Ji, Xing Sun, Guangming Lu</p>
-              <ul class="publication-links" aria-label="Filter Grafting resources"><li><a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Meng_Filter_Grafting_for_Deep_Neural_Networks_CVPR_2020_paper.html">Paper</a></li><li><a href="https://github.com/fxmeng/filter-grafting">Code</a></li></ul>
-            </div>
-          </article>
         </div>
-        <p class="publication-note"><sup>*</sup> Equal contribution.</p>
+      </div>
+    </section>
+
+    <section class="awards-section" id="awards" aria-labelledby="awards-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><h2 id="awards-title" data-cn="获奖">Awards</h2></div>
+        </div>
+        <div class="awards-grid">
+          <div class="award-card">
+            <span class="award-card-year">2019</span>
+            <div class="award-card-body">
+              <h3>IBM Major Award of Research Accomplishment</h3>
+              <p>Research Contribution to the AIOps-as-a-Service to Enterprise Customers</p>
+            </div>
+          </div>
+          <div class="award-card">
+            <span class="award-card-year">2019</span>
+            <div class="award-card-body">
+              <h3>IBM Outstanding Technical Achievement Award (OTTA Award)</h3>
+              <p>IBM Research — Outstanding technical achievement award</p>
+            </div>
+          </div>
+          <div class="award-card">
+            <span class="award-card-year">2019</span>
+            <div class="award-card-body">
+              <h3>IBM Lab Skill Winner (Top 10)</h3>
+              <p>IBM China Research Lab — Top 10 skills award</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience-section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><h2 id="experience-title" data-cn="履历">Experience</h2></div>
+        </div>
+
+        <div class="exp-wrap">
+          <div class="exp-item current">
+            <p class="exp-when" data-cn="至今">2022 - Present</p>
+            <div class="node"><div class="dot"></div></div>
+            <div class="exp-body">
+              <p class="exp-org" data-cn="北京通用人工智能研究院">Beijing Institute for General Artificial Intelligence (BIGAI)</p>
+              <p class="exp-role" data-cn="高级研究工程师">Senior Research Engineer<span class="exp-chip" data-cn="当前">Now</span></p>
+              <p class="exp-note" data-cn="大语言模型——智能体 · 长上下文 · 评测与基准"><strong>Large Language Models</strong><br>Agents · Long-context · Evaluation &amp; Benchmarking for </p>
+            </div>
+          </div>
+
+          <div class="exp-item">
+            <p class="exp-when" data-cn="至今">2021 - 2022</p>
+            <div class="node"><div class="dot"></div></div>
+            <div class="exp-body">
+              <p class="exp-org" data-cn="腾讯">Tencent</p>
+              <p class="exp-role" data-cn="应用研究员">Researcher</p>
+              <p class="exp-note" data-cn="智能运维——微服务指标异常检测，微服务调用链根因定位"><strong>AIOps</strong><br>Metrics Based Anomaly Detection ·  Call Graph Based Root Cause Analysis for Microservices</p>
+            </div>
+          </div>
+
+          <div class="exp-item">
+            <p class="exp-when" data-cn="至今">2019 - 2021</p>
+            <div class="node"><div class="dot"></div></div>
+            <div class="exp-body">
+              <p class="exp-org" data-cn="IBM中国研究院">IBM China Research</p>
+              <p class="exp-role" data-cn="研究科学家">Research Scientist</p>
+              <p class="exp-note" data-cn="智能运维——动态运维图谱，基于日志序列建模异常检测，基于动态服务画像异常检测，告警压缩"><strong>AIOps</strong><br>Dynamic Ops Graph · Sequential Log Based Modeling and Anomaly Detection · Dynamic Service Profiling Based Anomaly Detection · Alert Clustering</p>
+            </div>
+          </div>
+
+
+        </div>
       </div>
     </section>
 
     <section class="contact-section" id="contact" aria-labelledby="contact-title">
       <div class="container contact-card">
-        <div><p class="eyebrow">Contact</p><h2 id="contact-title">Let’s talk research.</h2><p>I welcome conversations about foundation model architectures, model adaptation, and efficient inference.</p></div>
+        <div><p class="eyebrow" data-cn="联系">Contact</p><h2 id="contact-title" data-cn="联系我">Let's talk research.</h2><p data-cn="欢迎交流关于智能体、长上下文建模、评测与基准的话题。">I welcome conversations about agents, long-context modeling, evaluation, and benchmarking.</p></div>
         <div class="contact-links">
-          <a class="button button-light" href="mailto:filtergrafting@gmail.com">filtergrafting@gmail.com</a>
-          <a href="https://www.zhihu.com/people/meng-fan-xu-4">Zhihu</a><a href="https://github.com/fxmeng">GitHub</a>
+          <a class="button button-light" href="mailto:lijiaqi@bigai.ai">lijiaqi@bigai.ai</a>
+          <a href="https://scholar.google.com/citations?user=C4Z2-rsAAAAJ">Google Scholar</a><a href="https://github.com/jiaqili">GitHub</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="container footer-inner"><p>© 2026 Fanxu Meng</p><a href="#main-content">Back to top <span aria-hidden="true">↑</span></a></div></footer>
+  <footer class="site-footer"><div class="container footer-inner"><p data-cn="© 2026 李佳琪">&copy; 2026 Jiaqi Li</p><a href="#main-content" data-cn="回到顶部 ↑">Back to top <span aria-hidden="true">&uarr;</span></a></div></footer>
+
+  <script src="/js/i18n.js"></script>
 </body>
 </html>
