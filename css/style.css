@@ -362,21 +362,26 @@ sup { position: relative; top: -0.25em; font-size: 0.68em; }
   transition: box-shadow 300ms ease, transform 300ms ease, border-color 300ms ease;
 }
 
-.news-mit {
+.news-brand {
   position: relative;
   isolation: isolate;
 }
-.news-mit::after {
+.news-brand::after {
   content: "";
   position: absolute;
   z-index: 0;
   inset: 0;
   border-radius: var(--radius);
-  background: url("/images/brand/mit-tech-review.svg") no-repeat right 1.5rem bottom 1.5rem / auto 4.5rem;
-  opacity: 0.08;
+  background: var(--brand-logo) no-repeat right 1.5rem bottom 1.5rem;
+  background-size: var(--brand-size, auto 3rem);
+  opacity: 0.10;
   pointer-events: none;
 }
-.news-mit > * { position: relative; z-index: 1; }
+.news-brand > * { position: relative; z-index: 1; }
+
+.news-brand:hover::after {
+  opacity: 0.14;
+}
 
 .news-featured:hover {
   box-shadow: 0 8px 32px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.05);
