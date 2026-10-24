@@ -246,18 +246,72 @@ h3 { margin-bottom: 0.75rem; font-size: clamp(1.1rem, 2.2vw, 1.5rem); font-weigh
 }
 
 .hero-copy > p:not(.eyebrow):not(.lead) { max-width: 47rem; color: var(--ink-soft); }
-.research-topics { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-block: 2rem; }
-.research-topics li {
-  padding: 0.35rem 0.8rem;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: var(--surface);
+.research-heading {
+  margin: 2rem 0 0.5rem;
+  color: #9e5a3f;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.research-interests {
+  margin-block: 0.6rem 2rem;
+}
+.research-interests p {
+  margin: 0.4rem 0;
+  padding-left: 1.5rem;
+  position: relative;
   color: var(--ink-soft);
-  font-size: 0.82rem;
-  font-weight: 550;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+.research-interests p::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--warm);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.research-interests p strong {
+  color: var(--warm);
+  font-weight: 700;
 }
 
 .hero-actions, .contact-links { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.button-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--surface);
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+  box-shadow: var(--shadow-sm);
+}
+.button-icon:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(44,44,44,0.2);
+}
+.button-icon img {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
+}
+.button-text {
+  color: var(--ink-soft);
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+.button-text:hover {
+  color: var(--accent);
+}
 .button {
   display: inline-flex;
   min-height: 2.7rem;
@@ -409,7 +463,7 @@ sup { position: relative; top: -0.25em; font-size: 0.68em; }
 .news-links { display: flex; gap: 1.1rem; margin-top: 0.85rem; }
 .news-links a { font-size: 0.86rem; font-weight: 700; }
 
-.awards-grid { display: grid; gap: 0.5rem; }
+.awards-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
 .award-card {
   display: flex;
   align-items: flex-start;
@@ -437,10 +491,10 @@ sup { position: relative; top: -0.25em; font-size: 0.68em; }
 .award-card-body h3 { margin-bottom: 0.2rem; font-size: 1.05rem; font-weight: 600; color: var(--ink); }
 .award-card-body p { margin: 0; color: var(--ink-soft); font-size: 0.9rem; line-height: 1.55; }
 
-.exp-wrap { position: relative; display: grid; gap: 1rem; max-width: none; }
+.exp-wrap { position: relative; display: grid; gap: 2.2rem; max-width: none; }
 .exp-item {
   display: grid;
-  grid-template-columns: 7.5rem 2rem 1fr;
+  grid-template-columns: 7.5rem 2rem 3.5rem 1fr;
   align-items: start;
   gap: 0 1rem;
 }
@@ -458,11 +512,14 @@ sup { position: relative; top: -0.25em; font-size: 0.68em; }
   position: absolute;
   top: 0;
   width: 2px;
-  height: calc(100% + 1.6rem);
+  height: calc(100% + 2.2rem);
   background: var(--line);
 }
-.exp-item:first-child .node::before { top: 0.32rem; height: calc(100% + 1.6rem - 0.32rem); }
+.exp-item:first-child .node::before { top: 0.32rem; height: calc(100% + 2.2rem - 0.32rem); }
 .exp-item:last-child .node::before { height: 0.32rem; }
+.exp-logo { display: flex; align-items: flex-start; padding-top: 0.15rem; width: 3.5rem; flex: none; justify-content: center; }
+.exp-logo img { height: var(--logo-h, 2rem); width: auto; object-fit: contain; }
+.exp-body { padding-left: 1.2rem; }
 .dot {
   position: relative;
   z-index: 1;
@@ -533,7 +590,7 @@ sup { position: relative; top: -0.25em; font-size: 0.68em; }
   .publication-media { min-height: 170px; max-height: 290px; }
   .publication:hover { transform: none; }
   .contact-links { justify-content: flex-start; }
-  .exp-item { grid-template-columns: 5.5rem 1.6rem 1fr; gap: 0 0.75rem; }
+  .exp-item { grid-template-columns: 5.5rem 1.6rem 2.8rem 1fr; gap: 0 1rem; }
   .exp-when { font-size: 0.82rem; }
   .exp-note { white-space: normal; }
 }
