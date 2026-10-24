@@ -559,7 +559,7 @@ sup { position: relative; top: -0.25em; font-size: 0.68em; }
 
 .contact-section {
   padding-block: clamp(3.5rem, 8vw, 6rem);
-  background: linear-gradient(rgba(30, 58, 79, 0.9), rgba(30, 58, 79, 0.95)), url("/images/bg.webp") center / cover;
+  background: linear-gradient(rgba(30, 58, 79, 0.5), rgba(30, 58, 79, 0.65)), url("/images/background/xizang.webp") center / cover;
   color: white;
 }
 
